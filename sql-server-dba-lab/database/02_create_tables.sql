@@ -5,7 +5,7 @@ USE Lab01;
 GO
 
 CREATE TABLE departamentos (
-    id_departamento INT PRIMARY KEY,
+    id_departamento INT IDENTITY(1,1) PRIMARY KEY, // LA SENTENCIA SE MEJORA PARA QUE SEA AUTOINCREMENTAL
     nombre VARCHAR(100) NOT NULL
 );
 GO
